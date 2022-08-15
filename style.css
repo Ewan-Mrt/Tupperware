@@ -109,3 +109,65 @@ section img{
         margin-top: 30px;
     }
   }
+
+  @media only screen and (max-width: 765px){
+
+    body {
+        background-color: red;
+      }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav h1{
+        font-size: 1.3em;
+    }
+
+    nav ul{
+        display: flex;
+        margin: 0%;
+    }
+
+    nav ul li{
+        margin-right: 30px;
+    }
+
+    nav button{
+        border-radius: 25px;
+        width: 100px;
+        height: 35px;
+    }
+
+    nav button a{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section #Titre{
+        margin-top: 25px;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    section p{
+        text-align: center;
+    }
+
+    section button{
+        width: 100px;
+        margin: auto;
+    }
+
+    section img{
+        width: 400px;
+        margin: auto;
+        margin-top: 25px;
+    }
+  }
