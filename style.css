@@ -1,3 +1,11 @@
+/* BODY */
+body{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
+}
+
 @font-face {
     font-family: 'Sarabun';
     src: url('font/Sarabun-Regular.ttf')
@@ -8,6 +16,12 @@
     src: url('font/Satisfy-Regular.ttf')
 }
 
+/* NAV BAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
 nav h1{
     font-family: 'Satisfy';
     text-transform: uppercase;
@@ -15,14 +29,18 @@ nav h1{
 }
 
 nav ul{
+    display: flex;
+    margin: 0%;
     list-style-type: none;
     text-transform: uppercase;
 }
 
-nav ul a{
+nav ul li a{
     font-family: 'Sarabun';
-    text-decoration: none;
     color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-left: 100px;
 }
 
 nav button{
@@ -30,6 +48,8 @@ nav button{
     border: none;
     border-radius: 56px;
     padding: 5px;
+    width: 100px;
+    height: 35px;
 
 }
 
@@ -40,27 +60,46 @@ nav button a{
     text-decoration: none;
 }
 
+/* SECTION */
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+section .Contenue{
+    margin-left: 10%;
+
+}
+
 section h1{
     font-family: 'Sarabun';
+    font-size: 2.8em;
     text-transform: uppercase;
     margin: 10px;
 }
 
 section #Need{
     color: #DED5C6;
-    font-size: 2em;
+    font-size: 3.3em;
 }
 
 section p{
     font-family: 'Sarabun';
+    margin-top: 50px;
+    font-size: 1.3em;
 }
 
 section button{
     background-color: black;
     border: none;
-    border-radius: 56px;
-    padding: 5px;
 
+    padding: 5px;
+    margin-top: 25px;
+    width: 125px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 25%;
 }
 
 section button a{
@@ -72,11 +111,95 @@ section button a{
 
 section img{
     border-radius: 20px;
+    width: 600px;
+    margin-right: 10%;
 }
 
-@media only screen and (max-width: 480px) {
-    body {
-      background-color: lightblue;
+/* RESPONSIVE DESIGN */
+
+/* 2000px à 1500px */
+@media (min-width: 1500px) and (max-width: 2000px){
+
+}
+
+/* 1500px à 1000px */
+@media (min-width: 1000px) and (max-width: 1500px){
+
+    /* NAV */
+    nav h1{
+        font-size: 1.3em;
+    }
+
+    /* SECTION */
+
+    section{
+        margin-top: 15%;
+    }
+
+    section h1{
+        font-size: 2em;
+    }
+    
+    section #Need{
+        font-size: 2.7em;
+    }
+
+    section p{
+        font-size: 1.2em;
+    }
+
+    section img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* 1000 à 840 */
+@media (min-width: 840px) and (max-width: 1000px){
+
+    /* NAV */
+    nav h1{
+        font-size: 1.2em;
+    }
+
+    nav ul li{
+        font-size: 0.8em;
+    }
+
+    nav button{
+        height: 30px;
+        width: 85px;
+    }
+
+    /* SECTION */
+    section .Contenue{
+        margin-left: 5%;
+    }
+
+    section h1{
+        font-size: 1.9em;
+    }
+
+    section #Need{
+        font-size: 2.5em;
+    }
+
+    section p{
+        font-size: 1em;
+    }
+
+    section img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* 840 à 500 */
+@media (min-width: 500px) and (max-width: 840px){
+
+    /* NAV */
+    nav{
+        display: block;
     }
 
     nav h1{
@@ -84,90 +207,104 @@ section img{
     }
 
     nav ul{
-        padding: 0%;
-    }
-
-    section{
-        display: flex;
+        font-size: 0.7em;
         flex-direction: column;
+        padding: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    section #Titre{
-        text-align: center;
-    }
-
-    section p{
-        text-align: center;
-    }
-    
-    section button{
-        width: 95px;
-        margin: auto;
-    }
-
-    section img{
-        margin-top: 30px;
-    }
-  }
-
-  @media only screen and (max-width: 765px){
-
-    body {
-        background-color: red;
-      }
-
-    nav{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav h1{
-        font-size: 1.3em;
-    }
-
-    nav ul{
-        display: flex;
-        margin: 0%;
-    }
-
-    nav ul li{
-        margin-right: 30px;
+    nav ul li a{
+        margin-left: 0%;
     }
 
     nav button{
-        border-radius: 25px;
-        width: 100px;
-        height: 35px;
+        width: 75px;
+        height: 40px;
     }
 
-    nav button a{
-        margin: 0%;
-        padding: 0%;
-    }
-
+    /* SECTION */
     section{
-        display: flex;
         flex-direction: column;
-    }
-
-    section #Titre{
-        margin-top: 25px;
-        text-align: center;
-        font-size: 1.8em;
-    }
-
-    section p{
         text-align: center;
     }
 
     section button{
-        width: 100px;
-        margin: auto;
+        margin: 0%;
+    }
+
+    section .Contenue{
+        margin: 0%;
     }
 
     section img{
         width: 400px;
+        height: 400px;
         margin: auto;
         margin-top: 25px;
     }
-  }
+}
+
+/* 500 à 300 */
+@media (min-width: 300px) and (max-width: 500px){ 
+
+    /* NAV */
+    nav{
+        display: block;
+    }
+
+    nav h1{
+        font-size: 1.2em;
+    }
+
+    nav ul{
+        font-size: 0.7em;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        margin-left: 0%;
+    }
+
+    nav button{
+        width: 75px;
+        height: 40px;
+    }
+
+    /* SECTION */
+    section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section h1{
+        font-size: 1.3em;
+    }
+
+    section #Need{
+        font-size: 1.9em;
+    }
+
+    section p{
+        font-size: 1em;
+    }
+
+    section button{
+        margin: 0%;
+    }
+
+    section .Contenue{
+        margin: 0%;
+    }
+
+    section img{
+        width: 275px;
+        height: 274px;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
