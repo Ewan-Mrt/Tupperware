@@ -67,7 +67,7 @@ essayer de recoder le site, de l'améliorer selon la roadmap ci-dessous.
 ## CONTACTS
 
 Twitter - [@mrt_ewan](https://twitter.com/mrt_ewan) <br />
-Mail - [ewan.martin110@gmail.com]
+Mail - [ewan.martin110@gmail.com]  <br />
 Projet: [GitHub - Tupperware](https://github.com/Zratyx/Tupperware)
 
 
@@ -143,5 +143,5 @@ try to recode the site, to improve it according to the roadmap below.
 ## CONTACT
 
 Twitter - [@mrt_ewan](https://twitter.com/mrt_ewan) <br />
-Mail - [ewan.martin110@gmail.com]
+Mail - [ewan.martin110@gmail.com] <br />
 Project: [GitHub - Tupperware](https://github.com/Zratyx/Tupperware)
